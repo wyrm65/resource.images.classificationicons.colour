@@ -3,7 +3,6 @@
 Provides a collection of square aspect ratio video classification icons from around the world. This is my attempt to set a standard to provide classification icon images for use in Kodi media centre skins.
 By providing a standard naming scheme for the images it is my hope that this will become the standard way for Kodi skins to support more than a tiny subset of available classification icons.
   
-Created by Wyrm
 
 ## NAMING SCHEME:
 
@@ -14,11 +13,11 @@ Icons in this colletion are named using the following rules:
 [] - Required
 {} - Optional
 
-CountryName Contains NO spaces but uses Camel code for naming. For example NewZealand NOT New Zealand. Required part of filename, uses English country name.
-Region Not required but if used must also not contain spaces and must be surrounded by brackets. For example Canada(Quebec) if using classifications from Quebec.
-TV- For if contry has a seperate classification scheme for TV broadcasts. A lot of contries do not use a seperate classification scheme for Movies and TV, thus is not required.
-Classification Once again the English version of the text used to describe classification.
-.png Images are png's and thus required ListItem.Mpaa field will contain everything above minus the .png
+* CountryName Contains NO spaces but uses Camel code for naming. For example NewZealand NOT New Zealand. Required part of filename, uses English country name.
+* Region Not required but if used must also not contain spaces and must be surrounded by brackets. For example Canada(Quebec) if using classifications from Quebec.
+* TV- For if contry has a seperate classification scheme for TV broadcasts. A lot of contries do not use a seperate classification scheme for Movies and TV, thus is not required.
+* Classification Once again the English version of the text used to describe classification.
+* .png Images are png's and thus required ListItem.Mpaa field will contain everything above minus the .png
 
 So using the above scheme an example would be as follows:
 
@@ -71,30 +70,30 @@ The following code can be used to access the icons in the resource file. The cod
 
 The following countries are currently supported, hopefully more to follow.
 
-Australia
-Australia TV
-Brazil
-Canada
-Canada TV
-Canada(Quebec)
-Denmark
-Finland
-France TV
-Germany
-Hungary
-India
-Ireland
-Italy
-Japan
-Netherlands
-NewZealand
-Russia
-SouthKorea
-SouthKorea TV
-Spain
-UK
-USA
-USA TV
+* Australia
+* Australia TV
+* Brazil
+* Canada
+* Canada TV
+* Canada(Quebec)
+* Denmark
+* Finland
+* France TV
+* Germany
+* Hungary
+* India
+* Ireland
+* Italy
+* Japan
+* Netherlands
+* NewZealand
+* Russia
+* SouthKorea
+* SouthKorea TV
+* Spain
+* UK
+* USA
+* USA TV
 
 In addition I have provided a Check Classification icon and have duplicated the USA and USA TV set of icons as Rated and TV- to allow for the old naming scheme.
 The USA icons under the old scheme could also contain the : character, which is an illegal character under some file systems, so they have not been provided.
