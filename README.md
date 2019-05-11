@@ -26,17 +26,17 @@ Australia TV-C.png as file name in this file and Australia TV-C as the required 
 
 Using the above scheme allows a number of benefits, those include:
 
-	ListItem.Mpaa field is still human readable, so skins that do not provide classification icons can still display reasonable looking text for the classification.
-	Icons can be displayed using a simple image control, thus can be displayed rapidly.
-	Skin writer does not have to keep adding code to their skin to support additional countries classification codes.
-	Current method to display classification codes does not scale. Each new country requires adding further variable code (slows Kodi down with each new addition).
-	Currently does not seem to be a universal naming scheme and thus only a very small subset of counties have icons provided, often skins only provide a limited number of different icons.
-	Old naming scheme sometimes used a : character, which is an illegal character in some filesystems. This required the skin to translate the ListItem.Mpaa string to something file system friendly.
+* ListItem.Mpaa field is still human readable, so skins that do not provide classification icons can still display reasonable looking text for the classification.
+* Icons can be displayed using a simple image control, thus can be displayed rapidly.
+* Skin writer does not have to keep adding code to their skin to support additional countries classification codes.
+* Current method to display classification codes does not scale. Each new country requires adding further variable code (slows Kodi down with each new addition).
+* Currently does not seem to be a universal naming scheme and thus only a very small subset of counties have icons provided, often skins only provide a limited number of different icons.
+* Old naming scheme sometimes used a : character, which is an illegal character in some filesystems. This required the skin to translate the ListItem.Mpaa string to something file system friendly.
 
 Unfortunately you can't bake a cake without breaking a few eggs. The following issues will need to be addressed:
 
-	Current scrappers do not follow this standard, they will require a rewrite to make this seemless to the users.
-	Current users will need to either rescrape with new scrappers or use a converstion script to comply with new scheme. Alternately they will need to edit their libraies in some way.
+* Current scrappers do not follow this standard, they will require a rewrite to make this seemless to the users.
+* Current users will need to either rescrape with new scrappers or use a converstion script to comply with new scheme. Alternately they will need to edit their libraies in some way.
 
 ## CODE:
 
