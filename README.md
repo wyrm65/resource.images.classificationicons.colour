@@ -8,13 +8,13 @@ By providing a standard naming scheme for the images it is my hope that this wil
 
 Icons in this colletion are named using the following rules:
 
-[CountryName]{(Region)}[ {TV-}Classification].png
+[Country Name]{ (Region)}[ {TV-}Classification].png
 
 [] - Required
 {} - Optional
 
-* CountryName Contains NO spaces but uses Camel code for naming. For example NewZealand NOT New Zealand. Required part of filename, uses English country name.
-* Region Not required but if used must also not contain spaces and must be surrounded by brackets. For example Canada(Quebec) if using classifications from Quebec.
+* Country Name Can contain spaces but uses Camel code for naming. For example New Zealand. Required part of filename, uses English country name.
+* Region Not required but if used must also not contain spaces and must be surrounded by brackets. For example Canada (Quebec) if using classifications from Quebec.
 * TV- For if country has a seperate classification scheme for TV broadcasts. A lot of countries do not use a seperate classification scheme for Movies and TV, thus is not required.
 * Classification Once again the English version of the text used to describe classification.
 * .png Images are png's and thus required ListItem.Mpaa field will contain everything above minus the .png
@@ -87,7 +87,7 @@ The following countries are currently supported, hopefully more to follow.
 * Brazil
 * Canada
 * Canada TV
-* Canada(Quebec)
+* Canada (Quebec)
 * Denmark
 * Finland
 * France TV
@@ -98,17 +98,17 @@ The following countries are currently supported, hopefully more to follow.
 * Italy
 * Japan
 * Netherlands
-* NewZealand
+* New Zealand
 * Russia
-* SouthKorea
-* SouthKorea TV
+* South Korea
+* South Korea TV
 * Spain
-* UK
-* USA
-* USA TV
+* United Kingdom
+* United States
+* United States TV
 
-In addition I have provided a Check Classification icon and have duplicated the USA and USA TV set of icons as Rated and TV- to allow for the old naming scheme.
-The USA icons under the old scheme could also contain the : character, which is an illegal character under some file systems, so they have not been provided.
+In addition I have provided a Check Classification icon and have duplicated the United States and United States TV set of icons as Rated and TV- to allow for the old naming scheme.
+The United States icons under the old scheme could also contain the : character, which is an illegal character under some file systems, so they have not been provided.
 ## DEVELOPMENT:
 [Github](https://github.com/wyrm65/resource.images.classificationicons.colour)
 
