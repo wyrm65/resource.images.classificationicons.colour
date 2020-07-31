@@ -2,7 +2,7 @@
 ## ABOUT resource.images.classificationicons.colour
 Provides a collection of square aspect ratio video classification icons from around the world. This is my attempt to set a standard to provide classification icon images for use in Kodi media centre skins.
 By providing a standard naming scheme for the images it is my hope that this will become the standard way for Kodi skins to support more than a tiny subset of available classification icons.
-  
+
 
 ## NAMING SCHEME:
 
@@ -59,16 +59,18 @@ The following code can be used to access the icons in the resource file. The cod
 		resource://resource.images.classificationicons.colour/] $INFO[Listitem.MPAA,,.png]</value>
 	</variable>
 
+Variable code above not strictly required, but does allow for the user to stick with United States certification over their local region if required.
+
 ## CONVERTING TO NEW SCHEME:
 
 Unfortunately the new naming scheme is not really compatible with the old scheme and thus will require the user to make changes to their video database.
 The suggested way to convert to the new scheme include:
 
 * Use the Universal movie scrapper. Under the scrappers configuration settings 'Ratings' change to your prefered certification country to your required country.
-  Then change the certification prefix setting to required country followed by a space. Rescrape your video library. Slow and only applies to movie library.
+  Then change the certification prefix setting to required country followed by a space. Rescrape your video library. Slow and only applies to movie library. (Don't need to use certification prefix as this is now provided automagically)
 * Export your library to seperate .nfo files and then edit MPAA entry of each file. Slow and tedious, but does get the job done.
-* Making use of an external library managment program to edit MPAA entries to use new scheme. I have not used these type of programs so have nothing to say on their usefulness.
-* Hopefully I can convince a script writer to write a script to bulk convert to new naming scheme. This has the best potiential to provide a seemless transition to new system. Fingers crossed.
+* Making use of an external library managment program to edit MPAA entries to use new scheme. I have not used these types of programs so have nothing to say on their usefulness.
+* Hopefully I can convince a script writer to write a script to bulk convert to new naming scheme. This has the best potiential to provide a seemless transition to new system. Fingers crossed. ( Nope, no takers. Have made minors changes to allow for this. )
 * And finally, the scrapper writters see the value of new scheme and update their scrappers to suit.
 
 ## ADDENDUM TO ABOVE POINT:
@@ -78,7 +80,7 @@ The previous section does not reflect the current state of this scheme as a numb
 * A number of skins do not use icons for MPAA certification ratings and were not open to including additional information in the Listitem.MPAA field as it would mess with text field formatting in their skins.
 * Users where unlikely to run a script to shift to new scheme. An automagical system was required to encourage user uptake. Also I was unable to find a script writer willing to write a script for the conversion.
 
-With the above in mind I have made a number of minor changes to scheme to address previous issues. While the file naming scheme of the resource file has NOT changed, the way to access the file as a skin writer has. Thanks to Sulafred (writer of Embuary skin and skin helper script) a way has been provided to access the users locale country via a helper script in Kodi Leia and Kodi Matrix provides this thru the skin engine. Using this information, the skin writer can provide a string to access the correct file from the provided resource file. Sulafred's helper script (or other library editing script is the user prefers) can provide a way for the user to edit individule library entries that don't match. So for the most part solution is automagical.
+With the above in mind I have made a number of minor changes to scheme to address previous issues. While the file naming scheme of the resource file has NOT changed, the way to access the file as a skin writer has. Scheme no longer requires the region to be included in the Listitem.MPAA info string. Thanks to Sulafred (writer of Embuary skin and Emburary skin helper script) a way has been provided to access the users locale country via a helper script in Kodi Leia and Kodi Matrix provides this thru the skin engine. Using this information, the skin writer can provide a string to access the correct file from the provided resource file. Sulafred's Metadata Editor (or other library editing script if the user prefers) can provide a way for the user to edit individule library entries that don't match. So for the most part solution is automagical.
 
 ## SUPPORTED COUNTRIES:
 
@@ -119,7 +121,7 @@ The United States icons under the old scheme could also contain the : character,
 
 ## FINALLY:
 
-As the resource currently stands it provides a fast way to access a large number of different country certification icons. It also allows for the rapid addition of countries without the need to update supporting skins. If your country is not currently supported and you have square aspect images of the certification icons, contact Wyrm via the Kodi forums and they will be added.
+As the resource currently stands it provides a fast way to access a large number of different country certification icons. It also allows for the rapid addition of countries without the need to update supporting skins. If your country is not currently supported and you have square aspect images of the certification icons, contact Wyrm via the Kodi forums and they will be added. Also the scheme allows for alternate naming of certification icons, so if icon is present but the Listitem.MPAA field returns an alternate naming for the icon, please contact Wyrm to correct issue.
 
 ## DEVELOPMENT:
 [Github](https://github.com/wyrm65/resource.images.classificationicons.colour)
