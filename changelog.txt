@@ -1,5 +1,6 @@
 v0.0.4
-- Add Portuguese icon files.
+- Add Portuguese icon files (thanks Rootzpower for icons).
+- Update UK icons to new designs (thanks Roidy for new icons)
 - Update Readme.md file to show current supported countrys
 
 v0.0.3
