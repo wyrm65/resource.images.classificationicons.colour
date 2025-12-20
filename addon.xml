@@ -14,6 +14,6 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>0.9.0[CR]  - Added another 21 countries, updated a number of existing country icons.[CR]  - Update readme file to show current state of play.</news>
+		<news>0.9.0[CR]  - Added another 18 countries, updated a number of existing country icons.[CR]  - Update readme file to show current state of play.</news>
 	</extension>
 </addon>
